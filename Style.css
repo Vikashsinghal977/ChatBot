@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #E3F2FD;
+    background: #6f7214;
 
 }
 .chatbot-toggler{
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     outline: none;
     cursor: pointer;
-    background: #724ae8;
+    background: #168e24;
     border-radius: 50%;
 
 }
@@ -60,7 +60,7 @@ body{
 
 }
 .chatbot header{
-    background: #724ae8;
+    background: #2c4e1d;
     padding: 16px 0;
     text-align: center;
     position: relative;
@@ -99,7 +99,7 @@ body{
     width: 32px;
     color: #fff;
     align-self: flex-end;
-    background: #724ae8;
+    background: #358928;
     text-align: center;
     line-height: 32px; 
     border-radius: 4px;
@@ -112,7 +112,7 @@ body{
 }
 .chatbox .chat p{
     padding: 12px 16px;
-    background: #724ae8;
+    background: #000000;
     max-width: 75%;
 
     border-radius: 10px 10px 0 10px;
@@ -148,7 +148,7 @@ body{
     width: 100%;
 }
 .chat-input span{
-    color: #724ae8;
+    color: #3ba20f;
     font-size:  1.35rem;
     cursor: pointer;
     /* background: red; */
