@@ -4,7 +4,7 @@ const chatbox=document.querySelector(".chatbox");
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 
 let userMessage;
-const API_KEY = "";
+const API_KEY = "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";
 
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
@@ -45,16 +45,23 @@ const handleChat = () => {
         chatbox.appendChild(createChatLi("Thinking...", "incoming"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generateResponse();
+        chatInput.value="";
     }, 600);
     chatInput.value="";
+
 }
 
 const show = () => {
-    var bute = document.getElementsByClassName("show-chatbot");
-    console.log(9);
+    var bute = document.getElementsByClassName("show-chatbot"); 
     bute.classList.toggle("show-chatbot");
 }
 
 sendChatBtn.addEventListener("click", handleChat);
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
+chatInput.addEventListener("keypress",logKey)
+
+function logKey(e) {
+    if(e.code=="Enter")
+    handleChat();
+  }
